@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>    
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+	<link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="cutegrids.css">
+      <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+    
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+    
+    <title>Fight For Flight Creative</title>
+    
+</head><!-- end head -->
+    
+    
+<body><!-- start body -->
+<div class="wrapper">
+    
+      <nav role="navigation" class="clearfix">
+           <div class="logowrap"><img src="images/ffflogo.svg" class="logo" alt="fff logo"> </div>
+            <ul class="clearfix">
+                <li><a href="home">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li> <a href="portfolio">Portfolio</a></li>
+                  <li><a href="services">Services</a></li>
+                <li><a href="blog">Blog</a></li>
+                <li><a href="contact">Contact</a></li>  
+            </ul>
+            <a href="#" id="pull">Menu</a>
+        </nav>
+	
+    <div class="main" role="main">
+            <img src="images/homepage.jpg" alt="home page header">
+        <div class="text cute-8-desktop right">     
+            Web &amp; Graphic Design
+            <h3>for the modern artist</h3>
+             <p class="blurb"><a href="portfolio" class="button">View Work</a></p>
+        </div> <!-- cute 8 -->
+    <div class="row">
+    <div class="cute-12-desktop center-desktop">
+                  <div class="content cute-4-desktop"> 
+         <h4>Web Design</h4>
+        <p>Stylish &amp; modern - our websites are the perfect promotional tool</p>
+          <p><a class="section" href="services">Web design</a></p>
+         </div> 
+         
+        <div class="content cute-4-desktop"> 
+         <h4>Graphic Design</h4>
+           <p>Print and online design including posters, business cards, t-shirts and promos.</p>
+          <a class="section" href="services">Graphic design</a></p>
+         </div>     
+        
+       <div class="content cute-4-desktop">  
+         <h4>Marketing</h4>
+              <p>Branding assistance, press campaigns and social media management</p>
+          <p><a class="section" href="services">Marketing</a></p> 
+        </div>
+    
+            </div>
+        </div>
+    </div>
+    
+</div><!-- end main -->
+<!-- start footer -->
+    <div class="row">
+        <div class="footer cute-12-desktop centered-desktop">
+    
+            <div class="cute-4-desktop footercontent">
+    <h1>Fight For Flight Creative</h1>
+        <p>Whether you're an emerging musician debuting an album, a budding business looking to promote your goods, or an artist working to snag the eye of the press, Fight for Flight Creative offers a wide-range of services to suit your needs.</p>
+            </div> <!-- end cute-4  -->
+    
+    
+    <div class="cute-4-desktop footercontent">
+     <h1>Contact</h1>
+    <p>Winnipeg, Manitoba, Canada<br/>
+        204 688 7455 <br />
+        <a href="mailto:janet@fightforflight.ca">janet@fightforflight.ca</a></p>
+     
+     <p><a class="section" href="mailto:janet@flightforflight.ca">Contact Us</a></p>
+        <p><strong>for a free consultation</strong></p>
+ </div> <!-- end cute-4  -->
+
+    
+             <div class="cute-4-desktop footercontent">
+    <h1>Follow Us!</h1>
+    <p><a href="https://www.facebook.com/fightforflightcreative/" target="_blank">Facebook</a><br />
+        <a href ="https://twitter.com/FFFCreative" target="_blank">Twitter</a><br />
+        <a href ="http://fightforflightcreative.tumblr.com/" target="_blank">Tumblr</a><br />
+        <a href="https://www.instagram.com/fightforflightcreative" target="_blank">Instagram</a></p>
+    </div>  <!-- end cute-4  -->
+
+    
+    <p class="cute-12-desktop centered-desktop" role="contentinfo">fight for flight creative &copy; 2015</p>
+            
+            </div><!-- end cute-12 footer  -->
+
+            
+              </div><!-- end row -->
+    
+     </div><!-- end main -->
+
+</div><!-- end wrapper -->
+    <script src="js/skrollr.min.js"></script>
+<script>
+      var s = skrollr.init();
+</script>
+    <!-- all written content and images by Janet Adamana -->
+</body>
+</html>
